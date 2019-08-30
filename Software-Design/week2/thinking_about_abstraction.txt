@@ -1,0 +1,46 @@
+- What's good about abstraction
+    The applications model represents the real world.
+
+    Model of Car:
+        Wheels
+        Seats
+        Radio
+        Tansmition
+
+        Also has:
+            Year of make
+            Mpg
+
+        Is a car just a boolean? Or an entire class with a lot of information?
+
+        It doesn't matter what it is in the real world, it maters what it's applications is in our application.
+
+    - Good abstraction is very minimal.
+    - Only represents what it does in our application, not what it is in the real world
+    - Moels are different for different applications
+    - We have to know the application we are creating, then create the model and abstraction based off that
+    - Let the usage pattern influence the abstraction
+
+- Domain - Goal is to model based on the domain of the application
+    Define the definition of the abstraction to nullify miscommunication
+    Let use cases and user stories drive the model and abstraction.
+
+- Context
+    Brings scope of focused area of the domain you can focus on.
+    You may have the whole domain but only some peices are neccessary
+
+    "Why it may be in the domain, it may not be in the context"
+
+    Allows us to focus on the model and bring it down to what we need.
+
+- Bounded Context - A more bounded region of the area we are really interested in
+    While something may behave differently in a certain context, it my behave differently in different bounded contexts
+
+    Everytime you make something, you are creating abstractions.
+        - Think about the names of your abstractions
+
+        double distance -vs- Distance class abstraction -vs- distanceInKM
+            - Can't tell untill you know domain, context, and bounded context
+
+- Domain Driven Design (By Eric Adams)
+    Model applications based on damain of the problem and bounded context of the problem.

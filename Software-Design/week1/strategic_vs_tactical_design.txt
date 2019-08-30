@@ -1,0 +1,56 @@
+Emerging Design - Comes out of code
+
+Evolutionary Design - Design that evolves as you get into the project deeper.
+
+Levels of Design
+    Don't make design decisions too early or too late.
+
+The knows and unknowns
+    know boths
+    observer effect - people observing will notice things
+        let people use the prodect and see whats going on so these things can come up
+    ENOUGH, minumum, Up Front Design
+
+Purpose of Strategic Design - Very course grain, very high level design, kinda like a map
+    we can look at the map and know where we are in the design
+    (we might need to know the weather, but we dont need to know the street name)
+    (we might need to know what bus we are taking, if driving then maybe we ned to know streets)
+    We dont need to know very specific details
+
+    This type of design serves to give us direction
+    You want to modify and evolve the design, if the first design works, there is devine presence in your project
+
+Purpose of tactical design - Very low level fine grain details
+    Variable names, do we need another class, should we put these functions in constructor, etc...
+    Ask ourselves: "Does this decision in crrease cost"
+                    "Does this decison make the design simpler"
+                    "Is the code easier to understand and maintain?"
+    - Refine the strategic design and make it relevant
+    - As details emerge, we can bring the strategic design into the reality of the world we are living in
+
+Strategic design gives us guidance and direction, Tactical Design keeps us realigned and more relavent to the problem
+    ITS A FEEDBACK LOOP
+
+    Code never deviates from the design. The design is in the code.
+    What people really mean its that the design which is in the code, deviates from the design diagram.
+
+    What if our design diagrams are such high level that they are in a constant state of flux?
+    Strategic design should be in a state of flux in the beginning and get more detailed as you go along.
+
+From requirements to Design
+    Given a set of requirements, start with a strategic design. Then to Tacticle Design as we begin to implement by writting use cases and automated test cases along the way.
+
+Use Cases & User Stories
+    Get use cases and user stories to guide the design
+    Go through Strategic Design
+    Go through Tacticle Design
+    Develope a prototype
+    Develope a Software
+    Evolve it
+    And be willing to throw small pieces of it out and recreate it
+    Build small peices, learn from it, and make them better.
+
+Architecture - Fits into a very high level design. A lot of of design things fit under this umbrella
+    Design should be able to modify the architecture
+    Use Strategic Design to uncover unknowns
+    Use Tactical Design to uncover more of the unknowns as we go through it

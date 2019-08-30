@@ -1,0 +1,127 @@
+Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If you do not check in, you will not receive any scores. When pairing please switch who checks in so there is significant number of check in from each of you.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+Please read the academic honesty policy posted on the course mailing list.
+
+The above details apply to all homework and assignments in this course.
+
+Now to homework #1.
+==============================================================================
+HW1: Due 11:59PM August 30
+
+Is design dead according to Martin Fowler in
+<http://martinfowler.com/articles/designDead.html>?
+
+What are some of the main observations he makes about how we should design?
+
+Relate these recommendations to your personal experiences, where it may have
+worked or may not have worked for you
+
+==============================================================================
+
+1) Is design dead according to Martin Fowler in <http://martinfowler.com/articles/designDead.html>?
+
+    Absolutely not. Design is actually a very important part in Software as he explains. Fowler discusses 
+both planned and evolutionary design in an effort to highlight the hurdles that software designers must overcome.
+The question of going through a more elaborate planning phase, at the risk of entropy and addressing every potential issue,
+is a trade-off with planned design. Despite evolutionary design being the most common practice, over time the code
+becomes difficult to alter and increasingly costly as the project goes on. In both cases the problem of entropy arises.
+Fowler suggests that it is more about finding a more optimal way to conduct the way you and your team designs.
+
+    The feedback loop is also extremely important here as it will keep everyone in confidence that they are doing
+what they should be doing to build quality software. People naturally work best when they feel like they
+know exactly what they are doing, this applies to any area of life, even software.
+Feedback, transparency, coaching, and continuous collaboration throughout teams and people with different
+responsibilities is vital for a team that wishes to work like a well oiled machine.
+
+
+
+2) What are some of the main observations he makes about how we should design?
+
+    He greatly values simplicity and flexibility. There is absolutely no reason for complicating things even a little bit.
+Keeping things simple allows for the project to grow while keeping everyone on the same page.
+Flexible design allows for easy iterating. If it isn't able to change and evolve it isn't a good design.
+This allows us to lower the cost of time and money for the current iteration as well as future ones.
+
+    He also talks about how design should be done before any coding should be done, to an extent. This pre-planning
+kind of depends on the type of project as well. It seems like he was conveying that we should design just enough to
+make sure that everyone is on the same page when it comes to how the project will be built, or at least on how the
+team will handle going about the next steps in the project. With a clear short term objective, you can work on
+exactly what you need to work on and not waste time and money implementing features that aren't needed.
+
+    Keeping everyone on the same page and informed about the design, as well as teaching developers new design
+techniques properly equipts everyone to contribute to design and ensures that everyone has and gets feedback
+and input. This kind of design pattern seems like it would work quite well as the objective can be made clear,
+everyone in team is growing, becoming better engineers, and becoming more equipt to hold the standards high
+for themselves and the people that are on their team.
+
+
+
+3) Relate these recommendations to your personal experiences, where it may have worked or may not have worked for you.
+
+Harrison:
+
+    In my personal experience with class projects, personal projects and in my internship this past semester I have
+seen where I have either, used these methods or didn't use these methods and how it played out in the quality of
+the code and environment.
+
+    My personal projects usually go a lot more chaotic and less organized and intentful than team projects.
+When I code alone I don't have the immediate responsibility to make sure my code will be of high
+quality so I kind of just mess around until I like something. I typically see myself doing a lot of
+researching on how exactly I want to do the project and end up not writting code until a while down the
+road because I don't want to start something that won't work. What I've been doing more lately is doing
+some research about the whole project, taking minimal notes, testing it out to see if the design
+I have in mind will work, and build off of that. I try to make small incremental design choices,
+but I notice I spend a lot of time on each researching and coding mindlessly
+and it is quite hard to make quality, concrete(ish) progress. I have noticed it getting better as I myself become
+more firmiliar with the process.
+
+    The time I've seen myself follow the best practices in my opinion was when
+I built a Lexer, Parser, and Code Generator for my Programming Languages class with Alipour. I had started the
+project WAY before the due date and got feedback from others as well as helped others. I made a working version
+that didn't really handle all test/edge cases, but this helped me understand the whole scope of the project
+and allowed me to continue iterating over it until I had something that was basically bulletproof for the
+scope of the project.
+
+    As far as when I worked in a team at my internship this psat summer, I worked on
+the companies oldest team with some of the highest coding standards at the company. It was a highly iterative team
+and at first the design was not really planned out all the way. I did not realize that this was how it was supposed
+to be and it made me feel like I didn't know what I was doing sometimes. But eventually I figured a lot of how
+the workflow was supposed to work on the team and I started making design decisions on my own and started to collaborate
+more with other teams and engineers on my team to work towards a completed product. I realized that my jobs was
+not just to code exactly what they gave me, but to also ask question about things unclear and to give feedback if something
+seemed off. Because at the very least, if I did have a concern about something I thought was wrong which was actually right,
+I could have it explained to me. Thus equiping me with more tools in my arsenal to tackle similar problems or help
+others on similar problems.
+
+    An ego free environment centered around helping people grow and learn and making quality
+products that the developers are proud of and motivated to create seems to be essential. This kind of environment allows
+the developers and leadership to be highly transparent with each other about what is going on in the project and how their
+tasks are going. This can lead to constant, welcomed feedback from the appropriate people in order to continuously iterate
+code, refactor clunky code, and do general maintenance, as well as to actually designing out in the earlier stages
+how the project will be carried out.
+
+Donovan:
+   
+In the past when working with a group on projects, we've tried mapping out a deisgn before beginning any programming to
+get an idea of how we wanted to arrive at a solution. However, the moment we began coding, we almost immediately ran 
+into unforeseen issues. This meant that our design was forced to change. Instead of a coming up with a simple design,
+we went too big, which resulted in many complexities with our design. This caused confusing and lead to many 
+issues that needing fixing. 
+
+Even working on personal projects, I've run into poor design techniques. Similarly to my partner, I've had the habit
+of having messy code as I figure things out as a go along. Refractoring is something that I don't do enough of, which 
+had lead to constant issues with implementing my design. However, I have had instances where I implemented good design. 
+I did this by addressing certain issues at a time. Instead of attempting to predict the future, I would pick a certain 
+relevant feature to implement, then after testing that feature I would move on to the next. Trying to address all features
+at once complicates things to a level that making clean programming almost impossible. In my experience, more simplicity 
+has lead to less issues when trying to reach a solution, however I have not yet broken all of my bad habits.

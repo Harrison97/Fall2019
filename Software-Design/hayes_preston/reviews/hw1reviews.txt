@@ -1,0 +1,32 @@
+[Reviewed 08/28/19 05:39 AM MDT]
+synopsis:  let's revisit parts 1 and 2
+
+details: 
+
+Please spellcheck.
+
+1.
+
+In this part we should discuss Martin's concerns about two different ways to design software. He goes into depth about the merits of each but how each one of them is not perfect.
+
+2.
+
+Need to slow down here and provide some context. We need to bring out which of those design methods we are trying to follow, why, and how the practices that will be outline in this part will alleviate the issues that should be highlighted in part 1.
+
+3.
+
+Good work in this part (Please spellcheck).
+
+"Instead of [a] coming up with"
+
+------------------------------------------------------------------------------
+[Reviewed 08/27/19 06:25 AM MDT]
+synopsis:  please add response to the hw1.txt file
+
+details: 
+
+Please update the hw1.txt file with your response and remove all other files from the hw1 directory.
+
+Write in short paragraphs and bring in details (we need depth) with good flow of observations. When reading the article take notes. That will help to bring in depth to the discussions and observations.
+
+------------------------------------------------------------------------------

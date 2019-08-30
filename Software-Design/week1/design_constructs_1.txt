@@ -1,0 +1,60 @@
+Designing Constructs
+- Structure of Programs
+    Expressions and Statements
+    Compound Blocks - Collection of statements
+    Conditions
+    Loops
+    Functions
+    Classes
+    Packages and Namespaces - Logical Grouping of Classes
+
+- Paradigms
+
+- 0bject Oriented Paradigm
+    Provide structure to give a set of behavior to a piece of data
+
+- Pillars of the Paradigm
+    - Abstraction - Abstract out functionality
+    - Encapsulation - separates what we do from how we do it.
+        Way to make sure a particular implementation is separate from the interface
+        We drive cars and travel a lot, so we travel different cars. How can I drive any of them even though they are
+        all different. They all have the same interface. Implementation can be different but interface is similar.
+        We can change the abstracted implementation without notifying end user. Private Variables.
+    - Inheritance - Can be used for interface abstractions.
+        Vehicle class and a Car class
+        We can create a Vehicle of a new Car();
+        The car is referenced to at construction
+
+        Interface Inheritence - *Car implements Vehicle interface*
+
+        Implementatioin Inheritence - Classes inherit from another class to reimplement a feature or add a feature.
+            *SportsCar extends Car*
+                super() - calls the constructor of the base class
+
+        Allows for substitution of classes, but is not required for substitution.
+            - You can pass a SportsCar where a Car is expected.
+            - Send a derived class where a base class is expected.
+    - Polymorphism - The method that is called is not based on the type of the reference but based on the the real
+        type of the object at runtime
+            - useCar(new Car())
+            - userCar(new SportsCar()) - car.drive() in useCar() refers to SportsCar.drive()
+                - using the car in useCar, the methods acted on the car are based on the type at runtime
+
+    Polymorphism combined with Encapsolation are the most important for extensibility of software.
+
+    When a functions depends on an interface, it is more reusable and extensible than when it depends on a class.
+
+
+- Functional Programming
+    Functions are considered first class citizens
+    - Higher-Order Functions - takes one or more functioins as args, returns a function
+    - Function Composition - 
+    - Lazy Evaluation
+
+- Principles
+
+- Patterns
+
+
+
+

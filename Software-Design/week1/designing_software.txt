@@ -1,0 +1,47 @@
+BUFD - Big Up Front Design
+    Take a problem - design the proble to the extent you can, then code it.
+    Doesn't work. Ends up being totally different than design.
+
+Create initial High-Level design.
+As we implement, make a very detailed tactical design.
+
+Once you have the design, the design is yours. A lot of the design will become clear as you begin to code.
+
+How do you know if design is good?
+    You reach a point that the design is not going to work? It happens.
+    Do what you can to minimize the possibility of that actually hapening.
+
+Take user stories. Put the features and stories into sorted order of the value.
+Take into account the impact of features.
+
+Design will always evolve.
+
+Entropy - Tendency of a system to go bad.
+
+The language you use greatly influences how you design a project.
+
+Why does software become so hard to create?
+    We create things that are not relevant.
+    If it is not relevant, don't code it.
+    When you change the code, the unused features cause problems and get in the way.
+    People are more likey to work on code that is:
+        - Relevance
+        - Maintanability
+    More maintanable software leads to projects that can easily evolve.
+
+    - Who isusng it?
+    - Who pays for it?
+        Who is going to pay for maintaining it? Even if it's open source?
+        When you write code for a company, they pay you to fix bugs you created.
+        Working for your own company? You pay for it.
+
+Create something simple.
+Keep the design simple.
+Keeping it simple is a lot harder and takes more time. It is worth it.
+
+Ask people "What it simple?" "What is simple design?"
+    Simpler design is easier to understand.
+    Minimal, Fails less. (Fails more gracefuly)
+
+
+

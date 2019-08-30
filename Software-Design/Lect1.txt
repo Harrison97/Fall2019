@@ -1,0 +1,32 @@
+Agile Developement is Feedback driven developement.
+
+Agile is about adaptive planning and using the feedback loops.
+
+PMs set the scope, set the date, and tell who is going to work on it. What is the point?
+
+Trying things? You try new versions of a screw? - Dumb
+                Why TRY new versions of a library??
+
+Design and code together?
+    When Justin is coding and looks up, then codes again, then repeats...
+                - JID - Just In-time Developement.
+
+If you want to save money - slow down to save speed. Spend the time writing quality tests.
+
+Slow down and write automated tests. Don't speed up on the turn and land in the ditch.
+
+2 benefits of tests:
+    Regression Test - make sure it still works
+    Design benefits. - Good design is cohesive and have less coupling.
+
+Automated tests that run as you change code - MochaJS
+
+Version control saves money! SEs NEED to be proficient in version control.
+
+"The biggest enemy you have, is time." -V
+
+He is here to teach and let us come out on top. He will not deny any information from me.
+    Don't soldier along and if I cannot figure it out, work a little, then ask questions.
+
+Take all of his feedback wit a grain of salt and he is not trying to be mean. Take it all positively
+
