@@ -1,0 +1,26 @@
+Interfaces - An abstraction, a collection of methods, dont offer implementation in them
+
+Design by Contract - Compilers can verify that a peice of code meets a certain expectation
+    Used in interfaces, Like paying with check, paypal, credit card - meets certain contractual agreement to pay
+
+The benefit of Contract
+    Tools and compilers can assist in putting two parties together so they can lock in and abide by terms.
+
+The Burden of Contracts
+    Mainly statically type languges:
+    They enforce a contract all the time
+    While the contract is useful, but we can't turn it on and off
+    Fix:
+        Abstract class and methods.
+        Intrfaces
+
+Design by Capability - methods work with any objects as long as they are willing, able, and capable.
+    Groovy has this better than Java. Doesn't require high level abstraction.
+
+The Benefit of such Design
+    Lightweight design. No need for deep highlevel hierarchy.
+
+The downside of this Approach
+    How do you know the object passed around is actually capable?
+        You dont.
+

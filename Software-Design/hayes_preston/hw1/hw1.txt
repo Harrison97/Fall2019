@@ -125,3 +125,8 @@ I did this by addressing certain issues at a time. Instead of attempting to pred
 relevant feature to implement, then after testing that feature I would move on to the next. Trying to address all features
 at once complicates things to a level that making clean programming almost impossible. In my experience, more simplicity 
 has lead to less issues when trying to reach a solution, however I have not yet broken all of my bad habits.
+
+Total [10}: 8
+
+The suggestions from the last review where not addressed, espcially in part 2.
+Need to spellcheck.

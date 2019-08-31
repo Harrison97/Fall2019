@@ -1,0 +1,27 @@
+- Information Hiding
+    Helps reduce cost of coaching
+    Helps cost of change and effect change makes on the code
+
+- What does That mean?
+    Creating fields in a Data Structure but making it non accessable out side the Structure
+
+- Encapsulating a Field - Helps protect a variable
+    - In Java, C++, or C#, encapsulation is at the class level
+        - Cant reach privates outside the class
+        - Can modify privat field of another object, inside the class of the same object
+            - car1.tow(50, car2) - tow can mutate private vars of car2
+
+    - In Ruby, encapsulation is at the instance level, not class level.
+        - Classes cannot access private field of different classes
+
+    - In Scala, Class level like java
+        - But mark private[this] var, and make it instance level
+
+- Access Boundaries
+
+- It's not about Security
+    It's about making sure the code is maintainable
+
+- Real purposes of encapsulation
+    - Minimize cost of Change
+    - Preserve invariants

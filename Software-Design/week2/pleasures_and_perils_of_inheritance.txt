@@ -1,0 +1,49 @@
+Relationships between abstractions
+    Abstractions are representations of ideas, concepts
+        - rarely live in isolation
+        - often relate to other abstractions - coupling
+    We want to minimize coupling
+
+    Types of relationships:
+        Association Related
+        Aggregation Related
+
+    "<Object> is a <objcet>" - most likely inheritance
+        Car is a KIND OF Vehicle
+        Can I use a car where I can use a vehicle? Yes, Inheritance
+
+    "<Object> has a <objcet>" -
+
+Inheritance
+    - Whats that?
+        Giving all the propertis of one objcet to another
+
+    - Main Purpose?
+        Reuse, but increases coupling
+
+    - Benefits and Burdens
+        Once you extend and object, it's bound to it and must obey the rules of that object.
+
+    - Interface vs. Implementation Inheritance
+        Interface give a contract without implementation detail
+        Interface is better that Implementation Inheritance,
+            because the latter is more constraining - Loose Vs. Strong Coupling
+
+        - Make Vehicle an interface instead of a Class
+
+    - Inheritance Vs. Delegation
+        Inheritance - One class takes on the properties of another
+        Delegation - Passing the duty off to another
+            - Use an object of another class as the instance variable
+
+        Better to use delegation than inheritance, but inheritance is easier.
+
+    - When to use inheritance
+        Inheritence is static
+        Delegation is dynamic
+
+        Being a worker or a manager is more of a field than a class - Delegation allows to switch roles
+        Inheritance is vertical
+        Delegation is more horizontal
+
+    Inheritance is static an increases coupling, delegation is usually a better choice.

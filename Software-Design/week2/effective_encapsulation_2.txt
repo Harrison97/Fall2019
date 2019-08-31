@@ -1,0 +1,26 @@
+Rethinking Encapsulation - More that just private variables
+
+    - Preserve invariants
+        - Range of tire preasure, or range of which is not safe.
+        - Enc. help preserve these invariants
+        - Ensures objects stay in a valid state
+
+    - Minimize Cost of Change
+        Expose a private List<Book> in getBook(),
+            but _books is actually an List<Book> _books = new ArrayList<>()
+
+        Inerfaces are standard, while implementations can be different
+
+    - Evolving Implementation
+
+    - Manage Concurrency
+        - Inventory is a History of Books
+        - Books is a collection of Book
+        - Removing from Books needs to not remove it entirely from Inventory
+            - This modifies the inventory indirectly - not good
+        - Encapsulation will help this concurrency
+
+    - Safe Iteration
+        To fix the Book/Inventory problem, return an unmutable collection clone of the List of books
+        - This fixes concurrent modification exception
+            - Like when modifying the inventory of books you are iterating through

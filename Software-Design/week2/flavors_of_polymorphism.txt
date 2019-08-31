@@ -1,0 +1,44 @@
+What's Polymorphism - Pick method based on the type of the target objcet at runtime.
+    When you invoke a method on an object, the method thtas invoked is not based on the type
+                of the reference, but the type of the object at runtime.
+
+    The most impotrant aspect of OOP
+    Cannot live without it for any reasonable extensibility(with encapsulation)
+
+What's the Big Deal?
+    Provides extensibility.
+    Promotes reusability.
+
+Inheritance?
+    Inheritance doesn't lead to Polymorphism
+    Polymorphism doesn't require Inheritance
+
+Static Vs. Dynamic
+    In statically typed languages, we often use Inheritance as a gateway to arrive at Polymorphism.
+    In dynamically typed languages does not need inheritance. Only cares if the method is available.
+
+Weak Vs. Strong Typing
+    Weak - Garbage in garbage out
+    Strong - Type checking happens at runtime
+
+    Java is static and strong typed
+    Ruby is Dynamically strong typed
+    Javascript and Perl are weak type dynamic languages
+
+Polymorphism Vs. Overloading
+    Overloading is not Polymorphic
+    Overloading is decided at runtime.
+    Overloading is two methods with the same name and different functionality
+        - Not that important like polymorphism
+        - Not polymorphic
+    Ruby doesn't have overloading
+
+    YOU CAN USE POLYMORPHISM WITHOUT INHERITANCE
+    YOU CAN USE POLYMORPHISM WITHOUT OVERLOADING
+    INHERITANCE WORKS WITH POLYMORPHISM BUT IS NOT REQUIRED
+
+Multimethods - Pick the method based on the type of BOTH the target object AND the types of the parameters at runtime.
+    Polymorphism on Steriods
+    Java does not support this but Groovy does.
+
+
