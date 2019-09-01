@@ -1,0 +1,174 @@
+Packages - Represents how ojct could be gathered together.
+    namespaces in C++
+
+
+Logical Vs. Physical Modeling
+    Logical Grouping
+        - A Placeholder, context, or frame in which we group classes together
+        - Packages are a logical grouping
+        - Brother Joe Vs. Uncle Joe - same name, different context.
+    Physical Grouping
+        - Where the classes physically reside
+        - Libraries in C++, .jar in Java, gems in ruby
+        - Can contain multiple packages or namespaces
+
+    - Used to separate out different and avoid collision between different classes.
+
+Classes and Packages
+    - Relationships can be between 2 packages, but this increases coupling
+
+Associations : Relationships between 2 Classes
+    - In UML draw a line between the two classes, optionally name the relationship
+    - There are different relationsihp possibilities
+        - Man can be a Father of a Woman
+        - Man can be a Brother of a Woman
+        - Man can be a Spouse of a Woman
+
+Link : an instance of an association
+    - Joe is Married to Susan
+    - Object Diagram: (draw line between)
+        - Link = "marriage"
+    - Joe is Susan's Brother
+        - Link = "sibling"
+
+    We usually traverse these links at runtime.
+
+Associations Often Appear as Verbs and Names of associations
+    - John 'Works' for <Company>
+        - association = 'works'
+
+End points of Associations
+    - Doesn't have to be in the diagram, because often times it will already be in the code.
+        - "Wife" and "Husband"
+
+Bi-Directional Vs. Un-Directional
+    - All relationships are generally Bi-Directional, but not all
+    - Father/Son, Brother/Brother, Brother/Sister, etc...
+
+    - Uni-Directional
+        - I love this book - book doesn't love back.
+
+Direction of Navigation
+    - Bi-Directional or not, the direction of navigation could be different.
+        - given wife, can you find husband? Vice Versa? - Bi-directional
+            - given one can you find the other? - Bi-Directional
+        - given a teacher, can you find  their students
+        (Doesnot have reverse navigation)
+        - given a student, you can't find their teachers - you have to search all teachers to find a relationship
+        - One way direction of navigation is easy, one way may be hard.
+
+        In UML - use arrows for direction of navigation
+            - No arrows - Bi-Directional
+            - Man -> Woman
+                - You can get to a Woman from a Man, but not from Woman to a Man
+            Cardinality
+                - Default is One-to-One
+                - Can specify cardinality with numbers by class representations
+                - Optional 0 or 1
+                    - 1 to 0.1
+
+One-to-One - at most one object on both side.
+
+One-to-Many
+    - One Father can have many Daughters
+    - Daughters can ONLY have one Father
+
+Many-to-Many
+    - You can have a group of objects with relationships across back and forth
+    - You can have many books with many users
+
+    A Group of teachers teaching a group of students
+
+    A group of parents and a group of kids
+
+Ternary and Higher-Order Associations
+    Binary - relationship between 2 objects
+        - Man and a Woman
+
+    Ternary - relationship between 3 object
+        - Joe is Married to Sam - Binary
+        - Joe and Sam have a Daughter, Sarah - Ternary
+
+        - This book was created by these 2 authors
+
+    N-ary
+        Complicated
+        Hard to Implement
+        Better to avoid
+        Model as Binary
+
+Cardinality
+    One - one object on either side
+
+    Optional - 0..1 repesents objects that may or man not exsist
+
+    Many - * represents many objects
+
+    Zero or More- 0..*
+
+    One or more 1..*
+
+Examples of Associations
+    Man is related to Woman by way of Marriage
+
+Self-Association
+    In one to many relationships, store relationship details in many side
+
+Link Attributes and Association Classes
+    Link Attributes are part of an Association Class - they link the classes together
+        - Person has DoB attribute
+        - Company has taxID attribute
+        - Association class has link attributes:
+            - dateOfhire
+            - Salary
+
+Qualifiers
+    Distinguishes among set of associated objects
+        - Using code, name , index, etc..
+
+    Modeled as Associate Arrays, or dictionaries
+
+Association Vs. Aggregation
+    Association - two objects of equal stature are related
+        - Man and Woman
+
+    Aggregation - 'has a' relationship - ownership / a part whole relationship
+        - Woman has a Purse
+
+        - UML uses a diamond symbol on the side of the owner in the relationship
+
+Aggregation Vs. Composition
+    Composition - an object owns an object, but their lifetime is the same
+
+        - A person is COMPOSED of Brain. Tied lifetime.
+
+        // C++
+        class Brain {};
+        class BetterBrain : public Brain {};
+        class Heart {};
+
+        class Person {
+            // Can never have a better brain - Composition
+            Brain brain;
+            // can replace a heart with another heart - Aggregation
+            Heart* pHeart;
+
+        public:
+            Person() {
+                pHeart = new Heart();
+            };
+
+            void changeHeart(Heart* pheart2) {
+                delete pHeart;
+                pHeart = pHeart2;
+            };
+        };
+
+Association - Same status
+
+Aggregation - A part/whole relationship
+    UML: White Diamond
+    - You can vary what you refer to
+
+Composition - I take ownership of the object, I live with it and die with it.
+    UML: Shaded Diamond

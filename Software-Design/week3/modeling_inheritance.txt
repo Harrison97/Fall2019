@@ -1,0 +1,80 @@
+Is-a Relationship
+    - Create an abstraction off an abstraction
+    - Man is a Human
+    - Promotes reuse of Base Classes
+
+Base Class or Super Class
+    - Super because it's superlative
+
+Derived Class or Subclass
+    - Given different implementations, the behavior should be consistent with the behavior the base class provides.
+
+Inheritance is Transitive
+    - If a class inherit from base class, and that base class inherits from another,
+        then the derived class inherits from grandfather class
+
+    - All derived classes inherit from every class in their hierarchy
+
+Aggregations may be Fixed, Variable, or Recursive
+    Fixed - I have a Wallet and I own my Wallet
+    Variable - I have a few Vehicles I own, I can by different Vehicles
+        - A folder containing files
+    Recursive - I aggregate an object which in return aggregates another object, and so forth
+        - A folder containing more foldlers
+
+Generalization Vs. Inheritance
+    Inheritance is at class level
+
+    Generalization is a generalization of inheritance
+        - Class level
+        - Component level
+        - Interface level
+        - etc..
+
+Breadth Vs. Inheritance
+    Deep or Broad?
+
+    Neither one is good.
+    As thin and short as possible, because inheritance increases coupling.
+
+Discriminator - Difference between the base and derived class
+    Man and Woman - Gender is discriminator or People
+
+    Vehicle - wheels can be a discriminator
+        Airplane
+        Car
+
+Association Vs. Aggregation Vs. Inheritance
+    Association and Aggregation - Object Level Relationship
+
+    Inheritance - Class Level Relationship
+
+    // C++
+    class TurboEngine extends Engine {};
+
+    class Car extends Vehicle { // inheritance
+        Engine engine; // aggregation / association
+        public Car(Engine theEngine){
+            engine = theEngine;
+        };
+    };
+
+Abstract Classes
+    Abstract Base class - cannot have objects or direct instances of this class
+        - use for a building block to derive classes
+
+    Can have implementations in them - fields, implemented methods.
+    Binds you to a certain implementation
+
+Interfaces - USUALLY BETTER TO USE
+    - Cannont have implementations in them.
+    - More eusable than abstract classes
+
+*Inheriting from Abstract Classes - you carry the burden of their implementation
+*Inheriting from an Interfaces - you don't carry that burden at all, you can implement your versions of those functions.
+
+Extension Vs. Restriction
+
+Prototypal Inheritance - vary dynamic, unlike class bases inheritance
+    inherits from an object instead of another class
+

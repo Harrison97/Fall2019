@@ -1,0 +1,137 @@
+Object Modeling - Draw Diagram, writting code, representation abstraction of a design idea.
+    - What is it?
+        Way for us to cope with the complexity of what we are building.
+        A representation to communicate desgin ideas effectively.
+
+    - Static Structure - objects models are a static structure
+        Use Cases - Describes a series of interactions.
+        Sequence Diagrams/Interaction Diagram;
+            - Shows flow of a function through different objects and methods. (Overkill/Waste of time)
+            - Horizontal timeline of scenarios that could happen
+
+    - Objects, Relationships
+        Object Diagram/Class Diagram - Shows classes and their relationships and functionality to each other
+        Keep them simple and easy to understand/maintain. Don't over do it.
+        Good diagram keeps the focus of the person looking at it, so that it brings the essentials characteristics
+            quickly so they can make fast and easy decisions.
+
+What to show?
+    Not a full representation of a system, but the most essential aspects you would like to show.
+    Most important details go into Object Diagram.
+
+Why use it?
+    When things look like they could be a class or wen classes may relate to each other.
+    As the design evolves, it may be a good idea.
+    To use as an easy way to communicate classes and functionality to other people.
+
+Objects
+    - What's an object?
+        Something that represents an abstraction that stands for something in the application
+        What is and isn't is very contextual and we have to decide that based on what we are trying to model.
+
+    - Object Decomposition - Take the problem on hand and assign different responsibilities to different objects.
+        Objects have identities - that object differs from that object.
+
+    - No single correct representation
+        Pick and chose based on context and domain of the problem.
+
+Classes - Blueprint of objects, collection of objects become a class.
+    - How to recognize them?
+        Clear representation of an abstraction.
+        Have state and behavior that could be captured in a class.
+        Often appear as nouns in a problem statement.
+
+    - Semantics, Abstraction
+
+    - Interpretation Varies
+        - Depends on the Application
+
+        - Depends on the Person Modeling
+            Same person can have a different design at different time
+
+Instances
+    Classes can have any number of instances of a class.
+
+Singletons
+    Classes that only allow for one instance of the class.
+
+Abstract Classes
+    Has 0 direct implementations
+    Gets 'implemented' or 'extended'
+        All types of people can be human, but nothing is just a human.
+
+Class Diagram Vs. Object Diagram
+    Class Diagram - shows interaction between Classes
+    Object Diagram - shows interaction between Objects
+
+Object Diagram (Ex: Interaction Diagram)
+    - Objects and Relationships
+
+    - Useful to document test cases
+
+    - Clarify Complex Behaviors or interactions
+
+    Do not create object diagrams, unless you need to explain intricate relatioinships.
+
+Class Diagram
+    - Should be concise, easy to understand
+
+Practical
+    - Keep it lightweight
+
+Representing a Class
+    UML - Unified Modeling Language. To communicate design ideas.
+    |---------------------------------------|
+    |Top: Name of Class                     |
+    |---------------------------------------|
+    |Second: Attributes/Fields of a class   | : (-)Private, (+)Public, (#)Protected, (~)Package Protected
+    |---------------------------------------|
+    |Third: Methods/Operations of the class |
+    |---------------------------------------|
+
+Attributes
+    - Data Value
+
+    - May be different for different instances
+
+    - Name is unique within a class
+
+    - Adjectives often as enumerated attribute
+
+Values
+    - Represent pure data values as attributes
+
+    - Represent objcet values as relationships
+
+    - Don't show internal identifiers
+
+    - Don't show every single attribute
+
+    - Visibility
+
+Derived attributes
+    - Base Attribute
+        Date of Birth
+
+    - Computed Value
+        Age is not stored in the object, it can come from the birth date attribute
+
+Operations and Methods (Kinda the same thing)
+    - Operations - Represents a behavior you can execute on an object
+        Something you can do on an object
+
+    - Method - a specific Implementation of an Operation on an Object
+
+    - Polymorphic Methods - method implemented differently on an object.
+
+    - Query Operations - (Ex: getAge() / get methods)
+        "Const/final Method" in C++. Read only.
+        Don't do any mutation on objects.
+        Calling theses methods doesn't change the state of the object.
+
+    - Mutators - Methods that modify the state of the object.
+        Ex: person.run()
+
+    Command Query Separation
+        Method that is a command on an object and a query on the state.
+        Asks the object to do something and asks for state from the object.
