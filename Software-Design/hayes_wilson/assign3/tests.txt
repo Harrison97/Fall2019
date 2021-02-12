@@ -1,0 +1,16 @@
+x canary test
+x check credit passed for candidate
+x check credit failed for candidate with reason "Poor credit"
+x check criminal records passed for candidate
+x check criminal records failed with reason "break in"
+x check employment records passed for candidate
+x check employment records failed with reason "no experience"
+x check citizenship records passed for candidate
+x check citizenship records failed with reason "not a citizen"
+x check agency gets passed 1 criteria
+x check agency gets passed multiple criteria
+x check with multiple criteria 0 failures
+x check with multiple criteria 1 failure
+x check with multiple criteria 2 failures
+x check with multiple criteria 3 failures
+x check with multiple criteria 43 failures

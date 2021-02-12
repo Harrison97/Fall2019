@@ -1,0 +1,125 @@
+[Reviewed 10/07/19 21:30 PM CEST]
+synopsis:  let's honor SRP and OCP
+
+details:                          
+
+Your score, had you not asked for extension would have been around 60. 
+Reasons? Please see the design issues mentioned in code.                    
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/03/19 07:52 AM MDT]
+synopsis:  let's refactor and move forward
+
+details: 
+                                          
+Please see suggestions in code.
+
+We need to focus on talking to the web service.
+
+After completing the tests, write a program (main) that will read a lat and lon from arguments provided and display the flyover for that lat lon location.
+
+From the build file, call the program for three different lat lons.
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/19 06:45 AM MDT]
+synopsis:  let's simplify
+
+details:                 
+
+Lot of code in the test more than what we need. The function is not doing what's expected at this level. Please see suggestions in code.
+
+After completing the two tests left for you to work on, please drop an email asking for a quick review. Let's get a quick check and then decide the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/19 06:30 AM MDT]
+synopsis:  let's simplify and move forward
+
+details:                                  
+
+Please see suggestions in code. Please proceed to complete the tests listed in tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/19 20:59 PM CEST]
+synopsis:  let's reduce some noise
+
+details:                          
+
+Please see suggestions in code.
+
+We have designed functions that return the time given the timestamp and
+lat/lon. Next step:
+
+Given lat/lon, the web service will return one of the following:
+1. timestamp when ISSS will fly over
+2. Error because the lat lon is not valid
+3. Network error.
+
+Let's not worry about the web service yet. Let's design a function, computeTimeOfFlyOver that takes three things:
+
+lat, long, iss_fly_over_function
+
+In the tests, let's mock the iss_fly_over_function to return some canned timestamp. Using this mock let's test the computeTimeOfFlyOver.
+
+-computeTimeOfFlyOver passes lat and lon to iss_fly_over_function
+-computeTimeOfFlyOver returns time based on timestamp returned by iss_fly_over_function
+-computeTimeOfFlyOver gracefully reports error due to error from webservice
+-computeTimeOfFlyOver gracefully reports network failure
+
+------------------------------------------------------------------------------
+[Reviewed 09/25/19 17:36 PM CEST]
+synopsis:  nice work so far
+
+details:                   
+
+Nice work so far. Please see suggestions in code.
+
+We now need a way to get time at lat lon. For that we need to know the timezone at a place of lat lon. We can use a library for that so the execution is local instead of going to the web.
+
+We can design a function called
+convert_timestamp_to_time_at_latlon() This function can take a timestamp, lat, and lon as input.
+
+------------------------------------------------------------------------------
+[Reviewed 09/25/19 09:17 AM CEST]
+synopsis:  let's change direction
+
+details: 
+
+Let's delete code and start over.
+
+Let's start with some useful behavior. Things that are fuzzy (like where the input may come from or the data from the webservice) can be deferred to later.
+
+Let's take a quick look at the following URL in a browser:
+http://api.open-notify.org/iss-pass.json?lat=29.721670&lon=-95.343631&n=1
+
+Ah, it's returning risetime which is the number of seconds since January 1, 1970 12:00 AM.
+
+We first need a function to go from timestamp to time. The time will be UTC, but that is OK, that is a good start.
+
+- get time for timestamp 1
+- get time for timestamp 2
+- get time for timestamp 60
+- get time for timestamp 1569130749
+
+These tests should not need any external dependencies. Given 1 we should return January 1, 1970, 00:00:01 as the time.
+
+By now we should have designed a function called convertTimeStampToUTC (of course, name of the function should follow convention of the language you are using.)
+
+Please mark tests with x in tests.txt as we progress through each test.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/19 22:29 PM CEST]
+synopsis:  let's setup build
+
+details:                    
+
+On the command line, in assign2 directory, we should be able to type 
+
+paver
+
+and see the tests pass and view the coverage report.
+
+Please don't hesitate to ask for further help if you need.
+
+------------------------------------------------------------------------------

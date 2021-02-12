@@ -1,0 +1,36 @@
+[Reviewed 10/24/19 06:16 AM MDT]
+synopsis:  let's honor SRP and OCP
+
+details: 
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/19 06:25 AM MDT]
+synopsis:  let's move forward
+
+details:                     
+
+Please see suggestions in code.
+
+Please see the tests.txt file.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/19 06:12 AM MDT]
+synopsis:  too much code, unnecessary details
+
+details:                
+
+Focus on only one criteria at first. Please see suggestions in code and tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 10/19/19 05:42 AM MDT]
+synopsis:  let's start with one criteria for evaluation
+
+details: 
+
+Fixed the build.bat so it does send exit code after running paver.
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------

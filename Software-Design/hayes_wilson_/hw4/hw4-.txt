@@ -1,0 +1,56 @@
+HW4 Due 11:59PM November 15
+
+***There will be no reviews for this Homework***
+
+Please write your answer in this file.
+
+1. What did you essentially learn in this course about design?
+
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+Madeleine Wilson
+The most important things I am taking away from this course are how to break down functions into abiding by the
+single responsibility principle, how to embody/implement YAGNI, and practicing consistent and logical syntax convention.
+Looking back at projects I created before taking your class, I see so much poor quality code.
+Every single project I've ever boasted about now seems so subpar.
+
+It's been such an exciting and humbling experience, having to shift my entire thought process to taking tiny steps,
+breaking things down to their smallest components, and resisting the urge to add unnecessary and cluttering
+functionality. During last semester I wrote a simple 3rd person shooter style game in order to teach myself Python.
+After 'completing' it and then finding a few fatal bugs, I completely 'refactored' it - or what I thought was
+refactoring. With what I know now, I have the strongest impulse to truly refactor and also implement testing in
+that program because quite honestly, it's hot garbage.
+
+Harrison Hayes
+Throughout this semester the number one thing that I learned in this course is that if I think I need something at first,
+I probably do not. This course showed me how to take my intuitive design and break it down into smaller parts
+that are more simple to understand, use, and extend using SRP and OCP. In doing so I also learned that design will
+always evolve. Your initial design may not be great but its a starting point and you can break it down, build on it,
+and even shave unneccessary bit of it away.
+
+The other side of that coin was learning how to collaborate effectively with a partner while having extremely different
+and really busy schedules at times. We would get code in periodically, recieve feedback then debreif on it, then continue
+with the project. This is basically the feedback loop that you were talking about more towards the beginning of the
+year but I feel this class really allowed us to get quality exposure to what that is supposed to look like.
+
+2. What are some of the general guidelines you would follow when designing?
+
+During the semester when doing our assignments we did tend to follow a routine. When we would get the
+assignment we would go over it with each other and make sure we were on the same page with what it was
+that was being asked of us. We would coordinate a way to make sure that we would split the work decently even.
+But then we realized that our initial design was rarely a good design.
+
+After we started to understand the structure of how the projects should be laid out and how they should be designed
+using all the rules learned in some of the videos, we would try to see how we would design it and how we would
+create a quality test suite. We would write out tests that we would create and we would start to scaffold the bare
+minimum and send it in to see if it was quality work and in the right direction that you wanted us to go.
+As the feedback loop progressed we continued to learn about how you wanted the structure of our projects and how
+we should be designing the project to maximize reuability and to minimize how invasive making changes in the future
+would be.
+
+As far as dividing up work, we did have some guidelines on that as well. We wanted each other to get to touch a little
+bit of everything in order to give both of us exposure to everything that was going on in the project. There were
+times were this wouldn't line up right because our schedules but we did have a way to work around that. At the end of
+every project we would get together and recap and make sure we both knew exactly what was going on so that we both
+had the same understanding of the project as a whole.
+

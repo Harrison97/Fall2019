@@ -1,0 +1,10 @@
+monkey
+fruit
+banana
+apple
+cosmopolitan
+yes
+more
+no
+eat
+fire

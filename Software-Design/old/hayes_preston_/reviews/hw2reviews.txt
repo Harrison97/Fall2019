@@ -1,0 +1,26 @@
+[Reviewed 09/02/19 05:07 AM MDT]
+synopsis:  good start, let's bring in some structure and design details
+
+details: 
+
+Diagram:
+
+Check in a pdf file of a diagram. The diagram may be hand drawn and scanned using a smart phone or you may use a UML diagraming tool to create it.
+
+Text:
+
+1.
+
+Please start with a short paragraph that reflects the understanding of what we are about to design, tell us about the game, the constraints, what we know about it.
+
+Then, reference a UML diagram that is in a separate file. After that, write a short paragraph describing the overall design, give a big picture. Give reasons. Then dive into, in short paragraphs, with details about each class, their purpose, and reasons we choose to design them.
+
+2.
+
+Many other languages can do this too, why are we choosing Python?
+
+3.
+
+We can get to this after we complete part 2.
+
+------------------------------------------------------------------------------

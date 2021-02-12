@@ -1,0 +1,63 @@
+Assign3: Due 11:59PM October 25
+
+An agency provides background check service. Given a candidate they can verify
+various things: credit, criminal records, employment verification, citizenship 
+check, etc. There may be more things they can verify in the future.
+
+To make things easy we will use social security number to represent a 
+candidate.
+
+Design a class library with the following:
+
+A candidate can be represented using the social security number, first name, 
+and last name.
+
+Provide facility to evaluate a candidate based on various criteria selected.
+
+The result of evaluation is either an approve or a disapprove. If it was a 
+disapprove, the reason(s) are provided. The result of evaluation should be
+candidate's full name, their social security number, and the result of the 
+evaluation, along with reasons for rejection.
+
+Design the library so that a user of the library can decide which criteria to
+use for evaluation. They can select one or more criteria. They can also 
+provide their own criteria beyond what the library provides.
+
+For each of the criteria (for example to check criminal records) we will 
+pretend that such code can be implemented by talking to a database or a web 
+service. For the purpose of this exercise we will generate a random response 
+in the code for the analysis of a criteria like criminal record.
+
+Let's focus on the following after the coding is completed:
+
+1. What design principles did we use in this assignment?
+
+This assignment emphasized the Open-Close principle and the Single-Responsibility principle.
+
+2. What were some of the challenges you ran into when creating the program?
+
+The biggest obstacle for us to overcome has been how to design a program architecture that honors OCP and SRP. Since applying SRP inherently requires the use of multiple program files, it has forced us to think critically about the interdependencies of our code. Doing so has led us to embrace an entirely different perspective on design in comparison to the way we have been programming previously in school. Improving modularity in this way has helped us learn how to increase the sophistication of our code in small but significant ways.
+
+3. Were there any surprises or unexpected learnings?
+
+Yes, in an effort to find an implement something of an interface in Python, we learned of abstract base classes. Though we had no experience using an abstract base class in Python, we saw that we could use them to ensure certain functionalities are created - like when the agency extends the module with more forms of validation.
+
+
+Total [100]: 85 (Note: Not enough participation by Madeleine)
+Code compiles with no errors [20]:
+All tests pass [10]:
+Test quality [20]:
+Code coverage [10]:
+Design quality [20]: -5
+
+Validator - YAGNI, unnecessary.
+
+
+Code quality[10]: -4
+
+Test_criteria_1 - need better names
+
+We should explore functional style to iterate over the criteria.
+
+Answers to questions [10]: -6
+Weak, lack of details.

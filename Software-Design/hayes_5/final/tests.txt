@@ -1,0 +1,7 @@
+x canary test
+- returns data from url
+- returns error from request error
+- extracts relevant details
+- prints Unit time is X on success
+- prints Error: Y on failure
+- parse content returns unixtime

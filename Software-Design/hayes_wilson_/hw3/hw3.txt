@@ -1,0 +1,60 @@
+HW3 Due 11:59PM October 11
+
+According to the article <http://martinfowler.com/bliki/BeckDesignRules.html>,
+what are the rules of simple design. Why are these important? Discuss the impact of these principles.
+Give examples of using these principles in the class so far. Also, if you like,
+give from examples outside of this class, but limit to your personal experiences.
+
+The four rules of simple design are that the code passes the tests, reveals intentions, is not
+duplicated, and is the fewest possible elements. This is also the order in which said tests
+should be prioritized. Passing the tests is, and should be, the most important rule because
+releasing untested code is a huge liability. Maintaining software can be arduous on its own,
+trying to predict & account for untested code makes for an impossible task. Making sure that
+all the tests pass has been the most heavily emphasized principle in this class thus far.
+
+The second rule, "Reveals Intention", is important because this will help to communicate what
+the purpose of the code is it's readers. The benefits to writting code that easily conveys
+it's intent massively outways the small nuances that it requires to make it easily understandable.
+The downsides of not creating code like this are that the readers, whether it be futer maintainers,
+or the code reviewer, cannot contrubite as aseasily as the could otherwise. It takes them more time
+to understand it and in return adds time to the feedback loop of the code. In our project we stive
+to make our code easily consumable with consistency in our syntax, whether it be line spacing and
+wrapping, variable and function names, or using single quotes only, version a mixture of single
+and double quotes. As well as making all of our names of functions, variables, and classes
+accurate representations of what it is they do or represent.
+Aside from always guiding us towards the next logical tests and implementation, the homework reviews
+and in-line feedback we receive are constantly amending our naming conventions, pointing out
+vague/ambiguous code blocks, and generally encouraging us to be more communicative via code.
+The impact of this has been that we, both consciously and subconsciously, begin actively searching
+for things to improve as we are writing our code instead of considering it as an afterthought.
+
+Additionally, the principles of removing duplicity and creating a minimum viable product have
+been slowly introduced to us through refactoring, refactoring, and refactoring. Originally when
+we were creating the mocks, we had copy and pasted the same first mock we wrote into multiple
+tests. Perhaps it was laziness, perhaps it was out of fear of having to write a brand new mock.
+The problems with having duplicated code all around and not striving to minimize it are huge.
+Mainly hassles in future maintainance; if you change one - you have to change the others.
+Working to condence and modularize the code is vital for create the minimum product, and one
+that is easily maintainable and extensible.
+
+The last principle is to have fewest element possible in the code. This one kind of wraps up
+all of the previous principles. With the correct tests passing, code that reveals intention,
+and minumal duplicity and coupling, we should be striving to design code with the smallest
+possible elements to do what we need it to do. And in doing this we remove a lot of time
+and confusion from the creation of the product. Having clear and concisely designed code
+allows us to be more productive, efficient, and meaningful when writting the code. Which
+in return allows for a more productive feedback loop and easier maintainance. Where as
+not striving for a minimal amount of elements, we create useless code, tests, and duplicity,
+along with a lack of communication of what the code is really intended for.
+
+Keeping these principles in mind has helped us in breaking out of that comfort zone of
+finding one bit of code that works and simply duplicating it, even when it doesn't fit
+our current needs. We have learned to modularize our code more, communicate our design
+to each other properly, and keep our code as concise and compact as possible to achieve
+the task at hand within the scope of the problem.
+
+Total[10]: -3
+Need to discuss the various benefits of passing tests.
+Need details on examples of passing tests.
+Spellcheck.
+Need to discuss how to resolve conflicts between rules.

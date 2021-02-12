@@ -1,0 +1,12 @@
+x canary test
+x read file returns list of cities
+x parse data returns offset on success
+x parser returns none if bad data
+x fetch data raises exception on bad req
+x get_hours_offset passes city to parse function
+x get_hours_offset handles exception
+x get_hours_offset returns valid city and hours offset
+x get_hours_offset returns city and err
+x get_hours_offset returns city and --- on bad page content
+x integration test tests get_hours_offset returns city and hours offset
+

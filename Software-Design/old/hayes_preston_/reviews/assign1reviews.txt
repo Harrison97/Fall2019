@@ -1,0 +1,33 @@
+[Reviewed 09/13/19 06:15 AM MDT]
+synopsis:  let's change direction
+
+details: 
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest version of your code, and runs the file build.bat that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/d/msg/uhcsf19sd/Vrbi-OCT3W4/o4qSr0dsAQAJ>.
+
+Also, please keep an eye on code coverage. To view the code coverage, please run the build using the following command (do not click or double click, instead open the command prompt, cd to your assign1 directory, and then run from there).
+
+paver
+Then take a look at the file (using a browser):
+coverage/index.html
+
+If the coverage shows red (less than 100%), please fix the coverage (by removing code) or ask for Venkat's help to fix it.
+
+Now to the code.
+
+**please take small steps. Write a lot, delete a lot.
+Please delete assign1/GameOfLife.py and assign1/test.py.
+
+From assign1.txt:
+"First start with a tests list (check in a tests.txt file) and a canary test. Implement at most two other tests, in addition to the canary test, and minimum code to make those tests to pass. This is a great first step to complete and ask for a review."
+
+Let's focus on a core behavior, logic, first before getting drawn into the details of the GUI, etc. Please see tests.txt.
+
+------------------------------------------------------------------------------

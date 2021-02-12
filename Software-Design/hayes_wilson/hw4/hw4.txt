@@ -1,0 +1,27 @@
+HW4 Due 11:59PM November 15
+
+***There will be no reviews for this Homework***
+
+Please write your answer in this file.
+
+1. What did you essentially learn in this course about design?
+                                
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+Madeleine Wilson
+The most important things I am taking away from this course are how to break down functions into abiding by the single responsibility principle, how to embody/implement YAGNI, and practicing consistent and logical syntax convention. Looking back at projects I created before taking your class, I see so much poor quality code. Every single project I've ever boasted about now seems so subpar. 
+
+It's been such an exciting and humbling experience, having to shift my entire thought process to taking tiny steps, breaking things down to their smallest components, and resisting the urge to add unnecessary and cluttering functionality. During last semester I wrote a simple 3rd person shooter style game in order to teach myself Python. After 'completing' it and then finding a few fatal bugs, I completely 'refactored' it - or what I thought was refactoring. With what I know now, I have the strongest impulse to truly refactor and also implement testing in that program because quite honestly, it's hot garbage.
+
+Replace this with your response.
+
+2. What are some of the general guidelines you would follow when designing?
+
+Replace this with your response. Provide one collective response as a team.
+
+SRP, OCP, YAGNI, and implementing TDD into an agile development scheme seem to be the most overwhelmingly necessary and helpful guidelines in software design. SRP, OCP, and YAGNI will all aid in having readable and understandable code, making sure your code is testable, and making refactoring in the future simpler. TDD will help quantify the quality of your code and thus increase it, as well as make seeing, finding, and fixing bugs significantly faster. Being agile in your development will also (hopefully) ensure that your project makes continuous progress by providing a structure through which you are routinely writing, testing, refactoring, and writing some more.
+
+Total[10]: 6
+Lacking in depth.
+
+Harrison: 3 pts (no response to part 1)

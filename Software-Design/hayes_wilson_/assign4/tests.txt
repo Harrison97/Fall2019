@@ -1,0 +1,16 @@
+x canary test
+x iterative test returns none for -1
+x iterative test returns 1 for 0
+x iterative test returns 21 for 7
+x functional test returns none for -1
+x functional test returns 1 for 0
+x functional test returns 21 for 7
+x recursive test returns none for -1
+x recursive test returns 1 for 0
+x recursive test returns 21 for 7
+x memo test returns none for -1
+x memo test returns 1 for 0
+x memo test returns 21 for 7
+x memo test returns 21 for 7, memoized
+x memo is faster that recursive
+

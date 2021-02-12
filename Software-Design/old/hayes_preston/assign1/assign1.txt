@@ -1,0 +1,34 @@
+Assign1: Due 11:59PM September 20
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list (check in a tests.txt file) and a canary test. Implement at most two other tests, in addition to the canary test, and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+During this assignment we learned little about PyQt5. We also worked together and learned how to create a design for the
+game that will allow for an infinite universe for The Game of Life. We learned how to collaborate with each other decently.
+We learned how to do unit testing and how to design tests. We also learned about how important code coverage is.
+And that we probably should have asked more questions earlier.
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+Our design is very different. We saw as time went on that our design would evolve and change as we got more information
+and came across issues we did not expect.
+
+3. Were there any surprises or things you did not expect along the way? Any
+particular problem faced, things you had to tackle that you did not expect
+beforehand?
+
+Yes. We didn't know how the project was supposed to be structured. At first we did not understand the code coverage
+part and how to run the tests and build the way you expected. We also did not expect PyQt5 to have a steep learning
+curve for us. The way we tried to handle this was to redesign until we got full code coverage and the project building
+the way you expected. Throughout the process we got on a few calls to work together on the design and to try to figure
+out how to get a UI properly working with PyQt5.
+

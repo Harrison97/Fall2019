@@ -1,0 +1,104 @@
+[Reviewed 09/19/19 05:53 AM PDT]
+synopsis:  need to consider universe is infinite, life is sparse
+
+details: 
+
+
+Space after comma, please. Please check the entire code for this.
+
+Please take a look at the design so far and ask how does it handle the case of an infinite universe.
+
+Since the universe is infinite, we can't take in the entire universe and deal with it. Thankfully life is sparse, relative to the size of the universe that is. We can leverage this fact in our design.
+
+Let's rethink about this.
+
+At the start of the game we are given which cells are alive. That will be sparse data, not infinite. We can drive off that information to determine which new cells are born and which existing cells die.
+
+For a cell to live, it needs either two or three live neighbors, based on the rules of the game. For us to decide if a cell lives or dies we need to know how many live neighbors it has. But, we can't take every cell and look for this data since we are dealing with infinite number of cells. Hum, what gives?
+
+At any time we know which cells are alive. What if each live cell sends out a signal in eight directions? For example, a cell at position (i, j) can send out a signal to (i - 1, j - 1), (i - 1, j), (i + 1, j), ...
+
+Then we can collate these signals, eventually to determine if a cell is alive or not.
+
+As a first step, let's implement a generate signal function:
+
+-given a live cell at position 3, 3, it generates eight signals for positions
+ (2, 2), (2, 3), (2, 4)...
+-given a live cell at positions 2, 4...
+-given a live cell at position 0, 0 (this is an infinite universe, we have to decide what happens at 0, 0)
+
+Let's implement a few tests for generateSignal which takes one position as input.
+
+------------------------------------------------------------------------------
+[Reviewed 09/18/19 04:56 AM PDT]
+synopsis:  previous review not addressed
+
+details:                                
+
+Please look for Feedback notes in code. Address and remove the feedback notes. Then drop an email to Venkat for review to continue.
+
+------------------------------------------------------------------------------
+[Reviewed 09/17/19 03:54 AM PDT]
+synopsis:  let's explore the next step
+
+details:                              
+                           
+Please see suggestions in code. After making the change, let's take the next step.
+
+Let's take the next step. Write one or two tests at the most and minimum code to make those tests to pass. Do not write a lot. Once you take that next small step, please drop an email to Venkat. Let's quickly check if we are heading in the right direction and can continue or if we need to change directions.
+
+------------------------------------------------------------------------------
+[Reviewed 09/16/19 04:33 AM PDT]
+synopsis:  let's change direction
+
+details: 
+
+Please mark tests as x in tests.txt once you complete those tests.
+
+Please take small steps.
+
+Please see the tests written so far. Please see the tests listed in tests.txt for next step.
+
+After completing those tests, please drop an email for a review. Let's make sure we're heading in the right direction.
+
+------------------------------------------------------------------------------
+[Reviewed 09/15/19 05:04 AM PDT]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/13/19 06:15 AM MDT]
+synopsis:  let's change direction
+
+details: 
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest version of your code, and runs the file build.bat that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/d/msg/uhcsf19sd/Vrbi-OCT3W4/o4qSr0dsAQAJ>.
+
+Also, please keep an eye on code coverage. To view the code coverage, please run the build using the following command (do not click or double click, instead open the command prompt, cd to your assign1 directory, and then run from there).
+
+paver
+Then take a look at the file (using a browser):
+coverage/index.html
+
+If the coverage shows red (less than 100%), please fix the coverage (by removing code) or ask for Venkat's help to fix it.
+
+Now to the code.
+
+**please take small steps. Write a lot, delete a lot.
+Please delete assign1/GameOfLife.py and assign1/test.py.
+
+From assign1.txt:
+"First start with a tests list (check in a tests.txt file) and a canary test. Implement at most two other tests, in addition to the canary test, and minimum code to make those tests to pass. This is a great first step to complete and ask for a review."
+
+Let's focus on a core behavior, logic, first before getting drawn into the details of the GUI, etc. Please see tests.txt.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+x canary test
+x a dead cell with zero neighbors stays dead
+x a dead cell with one neighbors stays dead
+x a dead cell with two neighbors stays dead
+x a dead cell with five neighbors stays dead
+x a dead cell with eight neighbors stays dead
+x a dead cell with three neighbors comes to life
+x a live cell with one live neighbors dies
+x a live cell with four live neighbors dies
+x a live cell with eight live neighbors dies
+x a live cell with two live neighbors lives
+x a live cell with three live neighbors lives
+-given a live cell at position 3, 3, it generates eight signals for positions
+ (2, 2), (2, 3), (2, 4)...
+-given a live cell at positions 2, 4...
+-given a live cell at position 0, 0 (this is an infinite universe, we have to decide what happens at 0, 0)

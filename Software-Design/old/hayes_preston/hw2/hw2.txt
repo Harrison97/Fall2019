@@ -1,0 +1,81 @@
+HW2 Due 11:59PM September 6
+
+In this homework we'll create an initial strategic design for a version of Game of Life.
+
+We'll not be writing any code in this homework, but only creating an initial design.
+
+Conway's Game of Life: <http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>.
+
+Don't worry about being right or wrong here (there is no one right
+design or solution to this problem).
+
+Don't google for answers, it is more fun to arrive at your own solutions and
+see how your thought process evolves in discussions with your pair and the reviews.
+
+1. How would you design this program which is a GUI application?
+Draw a UML diagram for your design and refer to it from the text here.
+
+The Game of Life is cellular automaton that requires no players. The game
+begins out of an intial state that then continues to evolve based on a set of rules.
+Any live cell with less than 2 neighbors dies by underpopulation, 2 or 3 neighbors 
+lives onto the next generation, more than 3 dies by over population, and
+any dead cell with exactly 3 live neighbors becomes alive by reproduction.
+
+We could create a Universe that the GUI could display.
+The Universe would how the details and state of the current generation.
+The Universe is represented as a 2D list of Cells.
+The Cell is what represents each piece in the universe, alive or dead.
+Each Cell only know what they are(Location/alive/dead),
+    they do not know anything about the entire universe or other Cells.
+The Universe can play through a generation and update it's state to the next generation of Cells.
+
+The Universe class would have the following methods: __init__(width, height), randomize_universe(),
+play_generation(), get_live_cells(), get_dead-cells(). This class will generate a randomized 2D universe, and
+will have getter methods to return a list of both live and dead cells. The variables grid and live_cells
+are of type Cell. The grid keeps track of the location of all cells in the universe while live_cells keeps track of the location of
+cells that are alive. The width and height are used to set the size of the universe.
+
+The Cell class would have the following methods: __init__(), __del__(), 
+getLocation(), kill(), is_alive(). This class is responsible for storing
+information about each individual cells. Checking whether or not the cell is
+alive, or killing itself based on the rules. The variables x_coord
+and y_coord are used to get the location of a cell, and alive is a boolean
+to indicate the status of a cell.
+
+2. Discuss (not just mention) what programming language you would use.
+
+We plan to use python. Python has many different libraries that allow users
+to easily create highly functional GUIs. It also has extensive support libraries
+that will help program the functionality of our game. The lanuage itself has a smooth learning curve, 
+which will be beneficial in terms of productivity. Python will easily allow us to refer to a representation of our universe.
+The GUI framework we plan to use will be PyQT5 as it seems to be the most modern and well rounded GUI
+framework for Python. Python will allow us to easily represent out universe as a grid, so there will be no need to
+directly inherit functionality from a list. Python will also allow for easy readability. And since we don't need
+any form of memory memory management or pointers their is no need for a language
+like C++. Java could be a good alternative, but again for readability and the fact that python does not require the code to
+be compiled we will use python for easier developement and maintainability.
+
+3. How do you plan to structure the program, what libraries would you use?
+Here we're looking for details about code directory structure, compilers, IDEs,
+tools, etc.---things that are at a higher level than the program and the programming language itself.
+
+the only external library we currently plan to use is PyQt5 for the GUI.
+The compiler we plan to use is the most recent version of the main distribution of python; CPython 3.8.
+On Harrison's end there will be no use of an IDE. Most of the work will be done in Vim.
+When structuring the code out I plan on having a file to represent the Cell and Universe classes, with
+another class file that will handle all of the display of the Universe.
+
+
+Total[10]: 6
+
+Diagram:
+
+Do not show 1 as that is the default
+Arrow should not be shaded.
+Lacking in separation of concerns, GUI, logic,...
+
+Spellcheck the document.
+
+Need a compelling reason for language choice.
+
+Testing tools, build tools?
